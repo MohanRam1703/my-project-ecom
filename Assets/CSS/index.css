@@ -74,7 +74,7 @@
 .div2{
     width: 80%;
     margin: 0px auto;
-    height: 100%;
+    height: 80%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
@@ -83,9 +83,13 @@
 }
 .div3{
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 .img2{
+    width: 100%;
+    height: 400px; 
+}
+.img3{
     width: 100%;
     height: 400px; 
 }
@@ -144,7 +148,7 @@ h4{
 .logo1{
     display: flex;
     position: absolute;
-    top: 65%;
+    top: 57.5%;
     right: 15%;
     background-color: #ffffff;
     font-size: 20px;
@@ -302,7 +306,7 @@ h3{
     }
     .navbar{
         width: 100%;
-        height: 100px;
+        height: 80px;
     }
     .navmenu{
         display: none;
@@ -317,6 +321,10 @@ h3{
         width: 100%;
     }
     .img2{
+        max-width: 100%;
+        height: 300px;
+    }
+    .img3{
         max-width: 100%;
         height: 300px;
     }
@@ -462,4 +470,93 @@ h3{
     .Retail{
         color: white;
     }
+}
+
+@media(max-width:600px){
+    .ui-menu{
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+    }
+    .paratag{
+        margin-top: 5px;
+        font-size: 12px;
+        text-align: center;
+    }
+    .search{
+        text-align: right;
+        font-size: 20px;
+    }    
+    .navbar{
+        box-sizing: border-box;
+        margin: 0 auto;
+        height: 100%;
+        padding: 0 
+    }
+    .img{
+        box-sizing: border-box;    
+        padding: 10px 0;    
+        max-height: 60px;    
+        max-width: 130px;    
+        width: auto;
+    }
+    .img1{
+        height: auto;
+        width: 100%;
+    }
+    .div2{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        object-fit: cover;
+        width: 75%;
+    }
+    .div3{
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        max-width: 100%;
+        height: auto;
+        max-width: 100%;
+        vertical-align: middle;
+    
+    }
+    .img2{
+        max-width: 100%;
+        height: 300px;
+        gap: 0;
+    }
+    .img3{
+        max-width: 100%;
+        height: 250px;
+    }
+    .product{
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+    }
+    .product1{
+        width: 100%;
+        height: 100%;
+    }
+    .clothing{
+        display: none;
+    }
+    .footer{
+        display: block;
+        text-align: center;
+        background: #000;
+        padding: 40px 20px 20px;
+        color: #fff;
+    }
+    .footer-col{
+        display: none;
+    }
+    .footer-par{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 40px;
+    }
+
 }
