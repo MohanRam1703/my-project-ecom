@@ -7,6 +7,7 @@
 .container{
     background-color: black;
     color: beige;
+    font-size: 15px;
 }
 .div1{
     width: 100%;
@@ -55,9 +56,7 @@
     padding: 11px;
 }
 .cart:hover{
-    background-color:  rgb(244,244,244);;
     border-radius: 0%;
-    color: black;
     font-size: 13px;
     cursor: pointer;
     opacity: 1;
@@ -229,7 +228,6 @@ h3{
      font-weight: 500;
      position: relative;
  }
- 
  .footer-col h4::before{
      content: '';
      position: absolute;
@@ -265,12 +263,13 @@ h3{
      line-height: 10px;;
      color: white;
      transition: all 0.5s ease;
+     font-size: 17.5px;
  }
 .footer-par{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding:  50px;
+    padding: 50px;
 }
 .img8{
     width: 200px;
@@ -297,7 +296,7 @@ h3{
     .ui-menu{
         display: flex;
         align-items: center;
-        font-size: 22px;
+        font-size: 25px;
     }
     .img{
         max-height: 60px;
@@ -314,7 +313,7 @@ h3{
     .search{
         display: flex;
         align-items: center;
-        font-size: 22px;
+        font-size: 25px;
     }
     .img1{
         height: auto;
@@ -508,36 +507,63 @@ h3{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         object-fit: cover;
-        width: 75%;
+        width: 80%;
+        gap: 0;
+        margin: 0 auto;
     }
     .div3{
-        display: block;
         width: 100%;
         object-fit: cover;
         max-width: 100%;
         height: auto;
-        max-width: 100%;
+        margin-top: 30px;
         vertical-align: middle;
-    
+        position: relative;
+    }
+    .div5{
+        width: 100%;
+        height: 100%;
     }
     .img2{
-        max-width: 100%;
+        width: 100%;
         height: 300px;
         gap: 0;
     }
     .img3{
-        max-width: 100%;
-        height: 250px;
+        width: 100%;
+        height: 300px;
+    }
+    .para1{
+        font-size: 30px;
+        position: absolute;
+    }
+    .font{
+        margin-top: 40px;
     }
     .product{
-        margin: 0;
-        padding: 0;
+        width: 100%;
+        margin: 0px auto;
+        height: 100%;
         display: grid;
-        grid-template-rows: repeat(2,1fr);
+        padding: 30px 80px;
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+        margin-top: 20px;
+        font-size: 12.5px;
     }
     .product1{
         width: 100%;
         height: 100%;
+    }
+    .img4, .img5{
+        width: 90%;
+        height: 250px;
+    }
+    .logo1{
+        top: 65%;
+        right: 15%;
+        background-color: #ffffff;
+        font-size: 20px;
     }
     .clothing{
         display: none;
@@ -546,7 +572,7 @@ h3{
         display: block;
         text-align: center;
         background: #000;
-        padding: 40px 20px 20px;
+        padding: 40px ;
         color: #fff;
     }
     .footer-col{
